@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_height="?attr/actionBarSize"
+
+        android:gravity="center_horizontal"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:floatingSearch_dimBackground="false"
+            android:inputType="textCapWords"
+            app:floatingSearch_searchHint="Student Name..."
+            app:floatingSearch_viewTextColor="@color/black"
+            app:floatingSearch_clearBtnColor="@color/black"
+            app:floatingSearch_leftActionColor="@color/black"
+            app:floatingSearch_suggestionsListAnimDuration="250"
+            app:floatingSearch_showSearchKey="false"
+            app:floatingSearch_leftActionMode="showSearch"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true" />
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_below="@id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/attendacneListView"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

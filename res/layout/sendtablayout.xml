@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb"
+            android:paddingTop="15dp"
+
+            android:layout_gravity="center" />
+        <TextView
+            android:text=""
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            fancy:fb_defaultColor="#247a3e"
+            fancy:fb_focusColor="#000000"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="5dp"
+            fancy:fb_text="Send to All"
+            fancy:fb_textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

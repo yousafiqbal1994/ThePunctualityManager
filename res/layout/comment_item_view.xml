@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:id="@+id/chatImage"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:src="@drawable/dp"
+        android:textAllCaps="true"
+        android:gravity="center" />
+
+    <TextView
+        android:text="Time here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Here"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/chatImage"
+        android:layout_toEndOf="@+id/chatImage" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Comment Here"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/chatImage"
+        android:layout_toEndOf="@+id/chatImage" />
+</RelativeLayout>
